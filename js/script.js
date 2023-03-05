@@ -1,58 +1,116 @@
 //English-Turkish language exchange
 
+const ceviri = {
+  tr: {
+    texts: {
+      buttonWarning: "Düğmenin çalışması için en az bir ses seçmeniz gerekir.",
+      description: "Calibri web uygulaması aslında Microsoft'un Elpy uygulamasından ilham alınarak hayata geçirilen bir projedir.",
+      technology: "Hangi teknolojiler kullanıldı?",
+      aboutApp: "Uygulama Hakkında",
+      name: "Kurs tarafından yeniden kodlandı",
+      name2: "Kurs tarafından yeniden kodlandı",
+      rights: "© Tüm Hakları Saklıdır",
+    },
+    labels: {
+      beach: "Plaj",
+      birds: "Kuşlar",
+      cafe: "Kafe",
+      campfire: "Kamp ateşi",
+      city: "Şehir",
+      fireplace: "Şömine",
+      forest: "Orman",
+      heavyRain: "Yoğun yağmur",
+      nightCrickets: "Cırcır böcekleri",
+      rain: "Yağmur",
+      rainCamping: "Yağmur, kamp",
+      rainWindshiled: "Yağmur, ön cam",
+      snow: "Kar",
+      thunder: "Gök gürültüsü",
+      train: "Tren",
+    },
+  },
+  en: {
+    texts: {
+      buttonWarning: "For the button to work, you need to select one sound.",
+      description: "Calibri web application is actually a project inspired by Microsoft's Elpy application.",
+      technology: "What technologies were used?",
+      aboutApp: "About App",
+      name: "Created by Milyaz Kamil",
+      name2: "Created by Milyaz Kamil",
+      rights: "© All Rights Reserved",
+    },
+    labels: {
+      beach: "Beach",
+      birds: "Birds",
+      cafe: "Cafe",
+      campfire: "Campfire",
+      city: "City",
+      fireplace: "Fireplace",
+      forest: "Forest",
+      heavyRain: "Heavy rain",
+      nightCrickets: "Night crickets",
+      rain: "Rain",
+      rainCamping: "Rain, camping",
+      rainWindshiled: "Raind, windshield",
+      snow: "Snow",
+      thunder: "Thunder",
+      train: "Train",
+    },
+  },
+};
+
 document.querySelector(".turkish-button").addEventListener("click", (e) => {
-    document.querySelector(".warning").innerText = "Düğmenin çalışması için en az bir ses seçmeniz gerekir.";
-    document.querySelector(".discription").innerHTML = "Calibri web uygulaması aslında Microsoft'un Elpy uygulamasından ilham alınarak hayata geçirilen bir projedir.";
-    document.querySelector(".contents").innerHTML = "Hangi teknolojiler kullanıldı?";
-    document.querySelector(".about-app-p").innerText = "Uygulama Hakkında";
-    document.querySelector(".name").innerHTML = "Milyaz Kamil Tarafından Oluşturuldu";
-    document.querySelector(".name2").innerHTML = "Milyaz Kamil Tarafından Oluşturuldu";
-    document.querySelector(".rights").innerHTML = "© Tüm Hakları Saklıdır";
-    document.querySelector(".beach-p").innerText = "Plaj";
-    document.querySelector(".birds-p").innerText = "Kuşlar";
-    document.querySelector(".cafe-p").innerText = "Kafe";
-    document.querySelector(".campfire-p").innerText = "Kamp ateşi";
-    document.querySelector(".city-p").innerText = "Şehir";
-    document.querySelector(".fireplace-p").innerText = "Şömine";
-    document.querySelector(".forest-p").innerText = "Orman";
-    document.querySelector(".heavy-rain-p").innerText = "Yoğun yağış";
-    document.querySelector(".night-crickets-p").innerText = "Cırcır böcekleri";
-    document.querySelector(".rain-p").innerText = "Yağmur";
-    document.querySelector(".rain-camping-p").innerText = "Yağmur, kamp";
-    document.querySelector(".rain-windshield-p").innerText = "Yağmur, ön cam";
-    document.querySelector(".snow-p").innerText = "Kar";
-    document.querySelector(".thunder-p").innerText = "Gök gürültüsü";
-    document.querySelector(".train-p").innerText = "Tren";
-})
+  document.querySelector(".warning").innerText = ceviri.tr.texts.buttonWarning;
+  document.querySelector(".discription").innerHTML = ceviri.tr.texts.description;
+  document.querySelector(".contents").innerHTML = ceviri.tr.texts.technology;
+  document.querySelector(".about-app-p").innerText = ceviri.tr.texts.aboutApp;
+  document.querySelector(".name").innerHTML = ceviri.tr.texts.name;
+  document.querySelector(".name2").innerHTML = ceviri.tr.texts.name2;
+  document.querySelector(".rights").innerHTML = ceviri.tr.texts.rights;
+  document.querySelector(".beach-p").innerText = ceviri.tr.labels.beach;
+  document.querySelector(".birds-p").innerText = ceviri.tr.labels.birds;
+  document.querySelector(".cafe-p").innerText = ceviri.tr.labels.cafe;
+  document.querySelector(".campfire-p").innerText = ceviri.tr.labels.campfire;
+  document.querySelector(".city-p").innerText = ceviri.tr.labels.city;
+  document.querySelector(".fireplace-p").innerText = ceviri.tr.labels.fireplace;
+  document.querySelector(".forest-p").innerText = ceviri.tr.labels.forest;
+  document.querySelector(".heavy-rain-p").innerText = ceviri.tr.labels.heavyRain;
+  document.querySelector(".night-crickets-p").innerText = ceviri.tr.labels.nightCrickets;
+  document.querySelector(".rain-p").innerText = ceviri.tr.labels.rain;
+  document.querySelector(".rain-camping-p").innerText = ceviri.tr.labels.rainCamping;
+  document.querySelector(".rain-windshield-p").innerText = ceviri.tr.labels.rainWindshiled;
+  document.querySelector(".snow-p").innerText = ceviri.tr.labels.snow;
+  document.querySelector(".thunder-p").innerText = ceviri.tr.labels.thunder;
+  document.querySelector(".train-p").innerText = ceviri.tr.labels.train;
+});
 
 document.querySelector(".english-button").addEventListener("click", (e) => {
-    document.querySelector(".warning").innerText = "For the button to work, you need to select one sound.";
-    document.querySelector(".discription").innerHTML = "Calibri web application is actually a project inspired by Microsoft's Elpy application.";
-    document.querySelector(".contents").innerHTML = "What technologies were used?";
-    document.querySelector(".about-app-p").innerText = "About App";
-    document.querySelector(".name").innerHTML = "Created by Milyaz Kamil";
-    document.querySelector(".name2").innerHTML = "Created by Milyaz Kamil";
-    document.querySelector(".rights").innerHTML = "© All Rights Reserved";
-    document.querySelector(".beach-p").innerText = "Beach";
-    document.querySelector(".birds-p").innerText = "Birds";
-    document.querySelector(".cafe-p").innerText = "Cafe";
-    document.querySelector(".campfire-p").innerText = "Campfire";
-    document.querySelector(".city-p").innerText = "City";
-    document.querySelector(".fireplace-p").innerText = "Fireplace";
-    document.querySelector(".forest-p").innerText = "Forest";
-    document.querySelector(".heavy-rain-p").innerText = "Heavy rain";
-    document.querySelector(".night-crickets-p").innerText = "Night crickets";
-    document.querySelector(".rain-p").innerText = "Rain";
-    document.querySelector(".rain-camping-p").innerText = "Rain, camping";
-    document.querySelector(".rain-windshield-p").innerText = "Rain, windshield";
-    document.querySelector(".snow-p").innerText = "Snow";
-    document.querySelector(".thunder-p").innerText = "Thunder";
-    document.querySelector(".train-p").innerText = "Train";
-})
-
+  document.querySelector(".warning").innerText = ceviri.en.texts.buttonWarning;
+  document.querySelector(".discription").innerHTML = ceviri.en.texts.description;
+  document.querySelector(".contents").innerHTML = ceviri.en.texts.technology;
+  document.querySelector(".about-app-p").innerText = ceviri.en.texts.aboutApp;
+  document.querySelector(".name").innerHTML = ceviri.en.texts.name;
+  document.querySelector(".name2").innerHTML = ceviri.en.texts.name2;
+  document.querySelector(".rights").innerHTML = ceviri.en.texts.rights;
+  document.querySelector(".beach-p").innerText = ceviri.en.labels.beach;
+  document.querySelector(".birds-p").innerText = ceviri.en.labels.birds;
+  document.querySelector(".cafe-p").innerText = ceviri.en.labels.cafe;
+  document.querySelector(".campfire-p").innerText = ceviri.en.labels.campfire;
+  document.querySelector(".city-p").innerText = ceviri.en.labels.city;
+  document.querySelector(".fireplace-p").innerText = ceviri.en.labels.fireplace;
+  document.querySelector(".forest-p").innerText = ceviri.en.labels.forest;
+  document.querySelector(".heavy-rain-p").innerText = ceviri.en.labels.heavyRain;
+  document.querySelector(".night-crickets-p").innerText = ceviri.en.labels.nightCrickets;
+  document.querySelector(".rain-p").innerText = ceviri.en.labels.rain;
+  document.querySelector(".rain-camping-p").innerText = ceviri.en.labels.rainCamping;
+  document.querySelector(".rain-windshield-p").innerText = ceviri.en.labels.rainWindshiled;
+  document.querySelector(".snow-p").innerText = ceviri.en.labels.snow;
+  document.querySelector(".thunder-p").innerText = ceviri.en.labels.thunder;
+  document.querySelector(".train-p").innerText = ceviri.en.labels.train;
+});
 
 const warning = document.querySelector(".warning");
-warning.style.display =  "none";
+warning.style.display = "none";
 
 const mainVolume = document.querySelector(".main-volume");
 
@@ -135,7 +193,6 @@ const trainDiv = document.querySelector(".train-div");
 const trainDivTwo = document.querySelector(".train-div-two");
 const train = document.querySelector(".train");
 
-
 //create shadow on hover
 
 beachDiv.style.backgroundColor = "black";
@@ -186,309 +243,291 @@ trainDiv.style.opacity = "0.6";
 // Clicking any box changes opacity, volume and shadow
 
 beachDivTwo.addEventListener("click", () => {
-    if(beachDiv.style.opacity === "0.6"){
-        beachDiv.style.opacity = "0";
-        beach.style.boxShadow = "0px 0px 50px 15px #2ae5fe";
-        beachSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        beachDiv.style.opacity = "0.6";
-        beach.style.boxShadow = "none";
-        beachSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (beachDiv.style.opacity === "0.6") {
+    beachDiv.style.opacity = "0";
+    beach.style.boxShadow = "0px 0px 50px 15px #2ae5fe";
+    beachSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    beachDiv.style.opacity = "0.6";
+    beach.style.boxShadow = "none";
+    beachSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 birdsDivTwo.addEventListener("click", () => {
-    if(birdsDiv.style.opacity === "0.6"){
-        birdsDiv.style.opacity = "0";
-        birds.style.boxShadow = "0px 0px 50px 15px #fef32a";
-        birdsSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        birdsDiv.style.opacity = "0.6";
-        birds.style.boxShadow = "none";
-        birdsSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (birdsDiv.style.opacity === "0.6") {
+    birdsDiv.style.opacity = "0";
+    birds.style.boxShadow = "0px 0px 50px 15px #fef32a";
+    birdsSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    birdsDiv.style.opacity = "0.6";
+    birds.style.boxShadow = "none";
+    birdsSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 cafeDivTwo.addEventListener("click", () => {
-    if(cafeDiv.style.opacity === "0.6"){
-        cafeDiv.style.opacity = "0";
-        cafe.style.boxShadow = "0px 0px 50px 15px #fea34d";
-        cafeSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        cafeDiv.style.opacity = "0.6";
-        cafe.style.boxShadow = "none";
-        cafeSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (cafeDiv.style.opacity === "0.6") {
+    cafeDiv.style.opacity = "0";
+    cafe.style.boxShadow = "0px 0px 50px 15px #fea34d";
+    cafeSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    cafeDiv.style.opacity = "0.6";
+    cafe.style.boxShadow = "none";
+    cafeSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 campfireDivTwo.addEventListener("click", () => {
-    if(campfireDiv.style.opacity === "0.6"){
-        campfireDiv.style.opacity = "0";
-        campfire.style.boxShadow = "0px 0px 50px 15px #fe1b1b";
-        campfireSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        campfireDiv.style.opacity = "0.6";
-        campfire.style.boxShadow = "none";
-        campfireSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (campfireDiv.style.opacity === "0.6") {
+    campfireDiv.style.opacity = "0";
+    campfire.style.boxShadow = "0px 0px 50px 15px #fe1b1b";
+    campfireSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    campfireDiv.style.opacity = "0.6";
+    campfire.style.boxShadow = "none";
+    campfireSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 cityDivTwo.addEventListener("click", () => {
-    if(cityDiv.style.opacity === "0.6"){
-        cityDiv.style.opacity = "0";
-        city.style.boxShadow = "0px 0px 50px 15px #fec11b";
-        citySound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        cityDiv.style.opacity = "0.6";
-        city.style.boxShadow = "none";
-        citySound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (cityDiv.style.opacity === "0.6") {
+    cityDiv.style.opacity = "0";
+    city.style.boxShadow = "0px 0px 50px 15px #fec11b";
+    citySound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    cityDiv.style.opacity = "0.6";
+    city.style.boxShadow = "none";
+    citySound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 fireplaceDivTwo.addEventListener("click", () => {
-    if(fireplaceDiv.style.opacity === "0.6"){
-        fireplaceDiv.style.opacity = "0";
-        fireplace.style.boxShadow = "0px 0px 50px 15px red";
-        fireplaceSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        fireplaceDiv.style.opacity = "0.6";
-        fireplace.style.boxShadow = "none";
-        fireplaceSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (fireplaceDiv.style.opacity === "0.6") {
+    fireplaceDiv.style.opacity = "0";
+    fireplace.style.boxShadow = "0px 0px 50px 15px red";
+    fireplaceSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    fireplaceDiv.style.opacity = "0.6";
+    fireplace.style.boxShadow = "none";
+    fireplaceSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 forestDivTwo.addEventListener("click", () => {
-    if(forestDiv.style.opacity === "0.6"){
-        forestDiv.style.opacity = "0";
-        forest.style.boxShadow = "0px 0px 50px 15px #1bfe31";
-        forestSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        forestDiv.style.opacity = "0.6";
-        forest.style.boxShadow = "none";
-        forestSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (forestDiv.style.opacity === "0.6") {
+    forestDiv.style.opacity = "0";
+    forest.style.boxShadow = "0px 0px 50px 15px #1bfe31";
+    forestSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    forestDiv.style.opacity = "0.6";
+    forest.style.boxShadow = "none";
+    forestSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 heavyRainDivTwo.addEventListener("click", () => {
-    if(heavyRainDiv.style.opacity === "0.6"){
-        heavyRainDiv.style.opacity = "0";
-        heavyRain.style.boxShadow = "0px 0px 50px 15px #d1ba23";
-        heavyRainSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        heavyRainDiv.style.opacity = "0.6";
-        heavyRain.style.boxShadow = "none";
-        heavyRainSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (heavyRainDiv.style.opacity === "0.6") {
+    heavyRainDiv.style.opacity = "0";
+    heavyRain.style.boxShadow = "0px 0px 50px 15px #d1ba23";
+    heavyRainSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    heavyRainDiv.style.opacity = "0.6";
+    heavyRain.style.boxShadow = "none";
+    heavyRainSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 nightCricketsDivTwo.addEventListener("click", () => {
-    if(nightCricketsDiv.style.opacity === "0.6"){
-        nightCricketsDiv.style.opacity = "0";
-        nightCrickets.style.boxShadow = "0px 0px 50px 15px #23bad1";
-        nightCricketsSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        nightCricketsDiv.style.opacity = "0.6";
-        nightCrickets.style.boxShadow = "none";
-        nightCricketsSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (nightCricketsDiv.style.opacity === "0.6") {
+    nightCricketsDiv.style.opacity = "0";
+    nightCrickets.style.boxShadow = "0px 0px 50px 15px #23bad1";
+    nightCricketsSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    nightCricketsDiv.style.opacity = "0.6";
+    nightCrickets.style.boxShadow = "none";
+    nightCricketsSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 rainDivTwo.addEventListener("click", () => {
-    if(rainDiv.style.opacity === "0.6"){
-        rainDiv.style.opacity = "0";
-        rain.style.boxShadow = "0px 0px 50px 15px #29d123";
-        rainSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        rainDiv.style.opacity = "0.6";
-        rain.style.boxShadow = "none";
-        rainSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (rainDiv.style.opacity === "0.6") {
+    rainDiv.style.opacity = "0";
+    rain.style.boxShadow = "0px 0px 50px 15px #29d123";
+    rainSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    rainDiv.style.opacity = "0.6";
+    rain.style.boxShadow = "none";
+    rainSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 rainCampingDivTwo.addEventListener("click", () => {
-    if(rainCampingDiv.style.opacity === "0.6"){
-        rainCampingDiv.style.opacity = "0";
-        rainCamping.style.boxShadow = "0px 0px 50px 15px #0077ff";
-        rainCampingSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        rainCampingDiv.style.opacity = "0.6";
-        rainCamping.style.boxShadow = "none";
-        rainCampingSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (rainCampingDiv.style.opacity === "0.6") {
+    rainCampingDiv.style.opacity = "0";
+    rainCamping.style.boxShadow = "0px 0px 50px 15px #0077ff";
+    rainCampingSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    rainCampingDiv.style.opacity = "0.6";
+    rainCamping.style.boxShadow = "none";
+    rainCampingSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 rainWindshieldDivTwo.addEventListener("click", () => {
-    if(rainWindshieldDiv.style.opacity === "0.6"){
-        rainWindshieldDiv.style.opacity = "0";
-        rainWindshield.style.boxShadow = "0px 0px 50px 15px #ffd000";
-        rainWindshieldSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        rainWindshieldDiv.style.opacity = "0.6";
-        rainWindshield.style.boxShadow = "none";
-        rainWindshieldSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
-
+  if (rainWindshieldDiv.style.opacity === "0.6") {
+    rainWindshieldDiv.style.opacity = "0";
+    rainWindshield.style.boxShadow = "0px 0px 50px 15px #ffd000";
+    rainWindshieldSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    rainWindshieldDiv.style.opacity = "0.6";
+    rainWindshield.style.boxShadow = "none";
+    rainWindshieldSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 snowDivTwo.addEventListener("click", () => {
-    if(snowDiv.style.opacity === "0.6"){
-        snowDiv.style.opacity = "0";
-        snow.style.boxShadow = "0px 0px 50px 15px #ffffff";
-        snowSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        snowDiv.style.opacity = "0.6";
-        snow.style.boxShadow = "none";
-        snowSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (snowDiv.style.opacity === "0.6") {
+    snowDiv.style.opacity = "0";
+    snow.style.boxShadow = "0px 0px 50px 15px #ffffff";
+    snowSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    snowDiv.style.opacity = "0.6";
+    snow.style.boxShadow = "none";
+    snowSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 thunderDivTwo.addEventListener("click", () => {
-    if(thunderDiv.style.opacity === "0.6"){
-        thunderDiv.style.opacity = "0";
-        thunder.style.boxShadow = "0px 0px 50px 15px #1bfefa";
-        thunderSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        thunderDiv.style.opacity = "0.6";
-        thunder.style.boxShadow = "none";
-        thunderSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
+  if (thunderDiv.style.opacity === "0.6") {
+    thunderDiv.style.opacity = "0";
+    thunder.style.boxShadow = "0px 0px 50px 15px #1bfefa";
+    thunderSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    thunderDiv.style.opacity = "0.6";
+    thunder.style.boxShadow = "none";
+    thunderSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 trainDivTwo.addEventListener("click", () => {
-    if(trainDiv.style.opacity === "0.6"){
-        trainDiv.style.opacity = "0";
-        train.style.boxShadow = "0px 0px 50px 15px #fe4c1b";
-        trainSound.play();
-        playButton.style.display = "none";
-        pauseButton.style.display = "block";
-        warning.style.display = "none";
-    } else {
-        trainDiv.style.opacity = "0.6";
-        train.style.boxShadow = "none";
-        trainSound.pause();
-        playButton.style.display = "block";
-        pauseButton.style.display = "none";
-    }
-})
-
-
+  if (trainDiv.style.opacity === "0.6") {
+    trainDiv.style.opacity = "0";
+    train.style.boxShadow = "0px 0px 50px 15px #fe4c1b";
+    trainSound.play();
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+    warning.style.display = "none";
+  } else {
+    trainDiv.style.opacity = "0.6";
+    train.style.boxShadow = "none";
+    trainSound.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+  }
+});
 
 //If no box is selected and the play button is clicked, a warning will appear.
 
 mainButton.addEventListener("click", (e) => {
-    if (playButton.style.display = "none"
-         && beachDiv.style.opacity === "0.6"
-         && birdsDiv.style.opacity === "0.6"
-         && cafeDiv.style.opacity === "0.6"
-         && campfireDiv.style.opacity === "0.6"
-         && cityDiv.style.opacity === "0.6"
-         && fireplaceDiv.style.opacity === "0.6"
-         && forestDiv.style.opacity === "0.6"
-         && heavyRainDiv.style.opacity === "0.6"
-         && nightCricketsDiv.style.opacity === "0.6"
-         && rainDiv.style.opacity === "0.6"
-         && rainCampingDiv.style.opacity === "0.6"
-         && rainWindshieldDiv.style.opacity === "0.6"
-         && snowDiv.style.opacity === "0.6"
-         && thunderDiv.style.opacity === "0.6"
-         && trainDiv.style.opacity === "0.6") {
-        setTimeout(() => {
-            warning.style.display = "block";
-        },)
-        setTimeout(() => {
-            warning.style.display = "none";
-        },5000)   
-    }
-})
+  if ((playButton.style.display = "none" && beachDiv.style.opacity === "0.6" && birdsDiv.style.opacity === "0.6" && cafeDiv.style.opacity === "0.6" && campfireDiv.style.opacity === "0.6" && cityDiv.style.opacity === "0.6" && fireplaceDiv.style.opacity === "0.6" && forestDiv.style.opacity === "0.6" && heavyRainDiv.style.opacity === "0.6" && nightCricketsDiv.style.opacity === "0.6" && rainDiv.style.opacity === "0.6" && rainCampingDiv.style.opacity === "0.6" && rainWindshieldDiv.style.opacity === "0.6" && snowDiv.style.opacity === "0.6" && thunderDiv.style.opacity === "0.6" && trainDiv.style.opacity === "0.6")) {
+    setTimeout(() => {
+      warning.style.display = "block";
+    });
+    setTimeout(() => {
+      warning.style.display = "none";
+    }, 5000);
+  }
+});
 
 //Controlling the volume
 
 function volume_change() {
-    beachSound.volume = mainVolume.value / 100;
-    birdsSound.volume = mainVolume.value / 100;
-    cafeSound.volume = mainVolume.value / 100;
-    campfireSound.volume = mainVolume.value / 100;
-    citySound.volume = mainVolume.value / 100;
-    fireplaceSound.volume = mainVolume.value / 100;
-    forestSound.volume = mainVolume.value / 100;
-    heavyRainSound.volume = mainVolume.value / 100;
-    nightCricketsSound.volume = mainVolume.value / 100;
-    rainSound.volume = mainVolume.value / 100;
-    rainCampingSound.volume = mainVolume.value / 100;
-    rainWindshieldSound.volume = mainVolume.value / 100;
-    snowSound.volume = mainVolume.value / 100;
-    thunderSound.volume = mainVolume.value / 100;
-    trainSound.volume = mainVolume.value / 100;
+  beachSound.volume = mainVolume.value / 100;
+  birdsSound.volume = mainVolume.value / 100;
+  cafeSound.volume = mainVolume.value / 100;
+  campfireSound.volume = mainVolume.value / 100;
+  citySound.volume = mainVolume.value / 100;
+  fireplaceSound.volume = mainVolume.value / 100;
+  forestSound.volume = mainVolume.value / 100;
+  heavyRainSound.volume = mainVolume.value / 100;
+  nightCricketsSound.volume = mainVolume.value / 100;
+  rainSound.volume = mainVolume.value / 100;
+  rainCampingSound.volume = mainVolume.value / 100;
+  rainWindshieldSound.volume = mainVolume.value / 100;
+  snowSound.volume = mainVolume.value / 100;
+  thunderSound.volume = mainVolume.value / 100;
+  trainSound.volume = mainVolume.value / 100;
 }
 //If the pause button is clicked, all open sounds will be paused and opacity, shadows will be turned off.
 
@@ -496,76 +535,59 @@ playButton.style.display = "block";
 pauseButton.style.display = "none";
 
 mainButton.addEventListener("click", () => {
-    if( playButton.style.display === "block" 
-        && beachSound.pause() === true
-        && birdsSound.pause() === true
-        && cafeSound.pause() === true
-        && campfireSound.pause() === true
-        && citySound.pause() === true
-        && fireplaceSound.pause() === true
-        && forestSound.pause() === true
-        && heavyRainSound.pause() === true
-        && nightCricketsSound.pause() === true
-        && rainSound.pause() === true
-        && rainCampingSound.pause() === true
-        && rainWindshieldSound.pause() === true
-        && snowSound.pause() === true
-        && thunderSound.pause() === true
-        && trainSound.pause() === true
-        ){
-        pauseButton.style.display = "block";
-        playButton.style.display = "none";
-    } else {
-        pauseButton.style.display = "none";
-        playButton.style.display = "block";
+  if (playButton.style.display === "block" && beachSound.pause() === true && birdsSound.pause() === true && cafeSound.pause() === true && campfireSound.pause() === true && citySound.pause() === true && fireplaceSound.pause() === true && forestSound.pause() === true && heavyRainSound.pause() === true && nightCricketsSound.pause() === true && rainSound.pause() === true && rainCampingSound.pause() === true && rainWindshieldSound.pause() === true && snowSound.pause() === true && thunderSound.pause() === true && trainSound.pause() === true) {
+    pauseButton.style.display = "block";
+    playButton.style.display = "none";
+  } else {
+    pauseButton.style.display = "none";
+    playButton.style.display = "block";
 
-        beachDiv.style.opacity = "0.6";
-        birdsDiv.style.opacity = "0.6";
-        cafeDiv.style.opacity = "0.6";
-        campfireDiv.style.opacity = "0.6";
-        cityDiv.style.opacity = "0.6";
-        fireplaceDiv.style.opacity = "0.6";
-        forestDiv.style.opacity = "0.6";
-        heavyRainDiv.style.opacity = "0.6";
-        nightCricketsDiv.style.opacity = "0.6";
-        rainDiv.style.opacity = "0.6";
-        rainCampingDiv.style.opacity = "0.6";
-        rainWindshieldDiv.style.opacity = "0.6";
-        snowDiv.style.opacity = "0.6";
-        thunderDiv.style.opacity = "0.6";
-        trainDiv.style.opacity = "0.6";
+    beachDiv.style.opacity = "0.6";
+    birdsDiv.style.opacity = "0.6";
+    cafeDiv.style.opacity = "0.6";
+    campfireDiv.style.opacity = "0.6";
+    cityDiv.style.opacity = "0.6";
+    fireplaceDiv.style.opacity = "0.6";
+    forestDiv.style.opacity = "0.6";
+    heavyRainDiv.style.opacity = "0.6";
+    nightCricketsDiv.style.opacity = "0.6";
+    rainDiv.style.opacity = "0.6";
+    rainCampingDiv.style.opacity = "0.6";
+    rainWindshieldDiv.style.opacity = "0.6";
+    snowDiv.style.opacity = "0.6";
+    thunderDiv.style.opacity = "0.6";
+    trainDiv.style.opacity = "0.6";
 
-        beach.style.boxShadow = "none";
-        birds.style.boxShadow = "none";
-        cafe.style.boxShadow = "none";
-        campfire.style.boxShadow = "none";
-        city.style.boxShadow = "none";
-        fireplace.style.boxShadow = "none";
-        forest.style.boxShadow = "none";
-        heavyRain.style.boxShadow = "none";
-        nightCrickets.style.boxShadow = "none";
-        rain.style.boxShadow = "none";
-        rainCamping.style.boxShadow = "none";
-        rainWindshield.style.boxShadow = "none";
-        snow.style.boxShadow = "none";
-        thunder.style.boxShadow = "none";
-        train.style.boxShadow = "none";
+    beach.style.boxShadow = "none";
+    birds.style.boxShadow = "none";
+    cafe.style.boxShadow = "none";
+    campfire.style.boxShadow = "none";
+    city.style.boxShadow = "none";
+    fireplace.style.boxShadow = "none";
+    forest.style.boxShadow = "none";
+    heavyRain.style.boxShadow = "none";
+    nightCrickets.style.boxShadow = "none";
+    rain.style.boxShadow = "none";
+    rainCamping.style.boxShadow = "none";
+    rainWindshield.style.boxShadow = "none";
+    snow.style.boxShadow = "none";
+    thunder.style.boxShadow = "none";
+    train.style.boxShadow = "none";
 
-        beachSound.pause();
-        birdsSound.pause();
-        cafeSound.pause();
-        campfireSound.pause();
-        citySound.pause();
-        fireplaceSound.pause();
-        forestSound.pause();
-        heavyRainSound.pause();
-        nightCricketsSound.pause();
-        rainSound.pause();
-        rainCampingSound.pause();
-        rainWindshieldSound.pause();
-        snowSound.pause();
-        thunderSound.pause();
-        trainSound.pause();
-    }
-})
-
+    beachSound.pause();
+    birdsSound.pause();
+    cafeSound.pause();
+    campfireSound.pause();
+    citySound.pause();
+    fireplaceSound.pause();
+    forestSound.pause();
+    heavyRainSound.pause();
+    nightCricketsSound.pause();
+    rainSound.pause();
+    rainCampingSound.pause();
+    rainWindshieldSound.pause();
+    snowSound.pause();
+    thunderSound.pause();
+    trainSound.pause();
+  }
+});
